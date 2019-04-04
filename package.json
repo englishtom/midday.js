@@ -1,0 +1,40 @@
+{
+  "name": "midday.js",
+  "version": "1.0.0",
+  "description": "A pure js port of midnight.js plugin to switch fixed headers on the fly",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist --copy-files",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/englishtom/midday.js.git"
+  },
+  "author": "Thomas English",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/englishtom/midday.js/issues"
+  },
+  "homepage": "https://github.com/englishtom/midday.js#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/preset-env": "^7.4.3",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-lodash": "^3.3.4",
+    "css-loader": "^2.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}
