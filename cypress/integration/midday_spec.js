@@ -86,8 +86,8 @@ describe('midday.js', () => {
 
         it('Builds a structure for each declared section', () => {
             // sections should have .customOuter and .customInner wrappers
-            cy.get('#options-nav .customOuter').should('have.length', 4)
-            cy.get('#options-nav .customOuter .customInner').should('have.length', 4)
+            cy.get('#options-nav .customOuter').should('have.length', 2)
+            cy.get('#options-nav .customOuter .customInner').should('have.length', 2)
 
             cy.wait(WAIT);
         });

@@ -6,6 +6,7 @@ new Midday(document.getElementById('custom-nav'), options);
 
 
 const options = {
+    sectionSelector: 'noon',
     headerClass: 'customOuter',
     innerClass: 'customInner',
     defaultClass: 'primary'
