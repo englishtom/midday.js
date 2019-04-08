@@ -52,6 +52,9 @@ describe('midday.js', () => {
             cy.get('#custom-nav .middayHeader').should('have.length', 4)
             cy.get('#custom-nav .middayHeader .middayInner').should('have.length', 4)
 
+            // when no default is provided it creates one
+            cy.get('#custom-nav-no-default .middayHeader.default').should('have.length', 1)
+
             cy.wait(WAIT);
         });
 

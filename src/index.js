@@ -308,12 +308,16 @@ class Midday {
         this._updateHeaderHeight();
 
         var $customHeaders = this.element.querySelectorAll('.'+this.options['headerClass']);
+
         if( $customHeaders.length ) {
-            // todo
-            //if( ! $customHeaders.filter('.'+ this.options['defaultClass']).length ) {
-                //// If there's no default header, just pick the first one, duplicate it, and set the correct class
-                //$customHeaders.filter('.'+ this.options['headerClass'] +':first').clone(true, true).attr('class', this.options['headerClass'] +' '+ this.options['defaultClass']);
-            //}
+            if( ! this.element.querySelector('.'+this.options['headerClass']+'.'+this.options['defaultClass']) ) {
+                // If there's no default header, just pick the first one, duplicate it, and set the correct class
+                var duplicate = $customHeaders[0].cloneNode(true);
+                duplicate.classList = "";
+                duplicate.classList.add(this.options['headerClass']);
+                duplicate.classList.add(this.options['defaultClass']);
+                this.element.prepend(duplicate);
+            }
         } else {
             // If there are no custom headers, just wrap the content and make that the default header
             wrapInner(this.element, 'div', 'class', this.options['headerClass'] +' '+ this.options['defaultClass']);
