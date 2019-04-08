@@ -6,9 +6,10 @@ body {
 nav.fixed {
     position: fixed;
     font-size: 40px;
+    width: 33%;
 
-    .middayHeader {
-        &.default {
+    .middayHeader, .customOuter {
+        &.default, &.primary {
             color: red;
         }
         &.white {
@@ -21,6 +22,20 @@ nav.fixed {
             color: blue;
         }
     }
+
+    &#custom-nav {
+        margin-left: 66%;
+        .img {
+            float: right;
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    &#options-nav {
+        margin-left: 33%;
+    }
+
 }
 
 section {
@@ -34,4 +49,8 @@ section {
     &:nth-child(4) {
         background: green;
     }
+}
+
+footer {
+    height: 94vh;
 }
