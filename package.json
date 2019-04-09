@@ -1,6 +1,6 @@
 {
   "name": "midday.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A pure js port of midnight.js plugin to switch fixed headers on the fly",
   "main": "dist/index.js",
   "scripts": {

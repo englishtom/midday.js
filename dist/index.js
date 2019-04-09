@@ -69,8 +69,9 @@ function Midday(element, options) {
     _this._$sections = (0, _filter2["default"])(document.querySelectorAll('[data-' + _this.options.sectionSelector + ']'), _util.visible);
     _this._sections = [];
 
-    _this._setupHeaders(); //this.recalculate();
+    _this._setupHeaders();
 
+    _this.recalculate();
   });
 
   _defineProperty(this, "recalculate", function () {
