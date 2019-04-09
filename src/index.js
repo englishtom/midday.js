@@ -90,7 +90,7 @@ class Midday {
 
         this._setupHeaders();
 
-        //this.recalculate();
+        this.recalculate();
 
     }
 
